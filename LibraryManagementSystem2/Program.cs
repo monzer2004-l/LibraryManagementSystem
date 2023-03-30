@@ -18,8 +18,8 @@ namespace LibraryManagementSystem2
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             // Change this line after the test
-            Application.Run(new FrmBooksCategories());
-            //Application.Run(new SplachForm());
+            //Application.Run(new FrmBooksCategories());
+            Application.Run(new SplachForm());
         }
     }
 }
