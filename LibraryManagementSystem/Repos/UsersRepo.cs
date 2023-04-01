@@ -33,10 +33,7 @@ namespace LibraryManagementSystem2.Helpers
             SqlHelper sqlHelper = new SqlHelper("");
             // Execute a non-query command
             int rowsAffected = sqlHelper.ExecuteNonQuery
-                (@"INSERT INTO Users
-    (Name, Email, Password)
-VALUES
-    (@Name, @Email, @Password) "
+                (@"INSERT INTO Users    (Name, Email, Password)VALUES    (@Name, @Email, @Password) "
             , CommandType.Text,
                 new SqlParameter("@Name",name), new SqlParameter("@Email", email),new SqlParameter("@password", password)) ;
 
