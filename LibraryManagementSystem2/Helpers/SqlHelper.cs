@@ -14,7 +14,7 @@ namespace LibraryManagementSystem2.Helpers
 
     public class SqlHelper
     {
-        private readonly string _connectionString= "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\vision\\Desktop\\University\\Second term\\Programming\\برامج2\\LibraryManagementSystem2\\LibraryManagementSystem2\\DB.mdf\";Integrated Security=True";
+        private readonly string _connectionString= "Server=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\DB.mdf;Integrated Security=True";
 
         public SqlHelper(string connectionString)
         {
