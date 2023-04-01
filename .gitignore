@@ -3,5 +3,8 @@
 ################################################################################
 
 /LibraryManagementSystem2/bin
-/.vs/LibraryManagementSystem2
+/.vs/LibraryManagementSystem
 /LibraryManagementSystem2/obj
+
+/.vs/LibraryManagementSystem2
+/LibraryManagementSystem/bin/Debug
