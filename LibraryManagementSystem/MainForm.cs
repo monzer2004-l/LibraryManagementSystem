@@ -38,5 +38,12 @@ namespace LibraryManagementSystem2
         {
 
         }
+
+        private void btnUsers_Click(object sender, EventArgs e)
+        {
+            FrmUsers frm = new FrmUsers();
+            frm.Show();
+            this.Hide();
+        }
     }
 }

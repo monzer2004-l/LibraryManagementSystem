@@ -1,4 +1,5 @@
 ﻿using LibraryManagementSystem2.Forms;
+using LibraryManagementSystem2.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,8 +19,8 @@ namespace LibraryManagementSystem2
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             // Change this line after the test
-            Application.Run(new FrmBooksCategories());
-            //Application.Run(new SplachForm());
+            //Application.Run(new FrmMain());
+            Application.Run(new SplachForm());
             // Application.Run(new FrmBooks());
         }
     }
