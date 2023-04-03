@@ -81,6 +81,14 @@ namespace LibraryManagementSystem2
             repo.Insert(txtBookName.Text, txtAuthor.Text, txtPublisher.Text,txtISBN.Text,txtCategoryId.Text,txtAvailableCopies.Text,txtPrice.Text);
             LoadData();
         }
+
+        private void btnhome_Click(object sender, EventArgs e)
+        {
+            MainForm undo = new MainForm();
+            undo.Show();
+            this.Hide();
+        }
+    }
     }
     
 }
