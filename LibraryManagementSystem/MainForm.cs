@@ -37,7 +37,9 @@ namespace LibraryManagementSystem2
 
         private void btnbook_Click(object sender, EventArgs e)
         {
-
+            var frm = new Frmbook();
+            frm.Show();
+            this.Hide();
         }
 
         private void btnUsers_Click(object sender, EventArgs e)
