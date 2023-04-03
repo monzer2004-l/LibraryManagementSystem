@@ -1,4 +1,5 @@
 ﻿using LibraryManagementSystem2.UI;
+using LibraryManagementSystem2.UI.Lists;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +20,7 @@ namespace LibraryManagementSystem2
             Application.SetCompatibleTextRenderingDefault(false);
             // Change this line after the test
             //Application.Run(new FrmMain());
-            Application.Run(new MainForm());
+            Application.Run(new FrmUsers());
             // Application.Run(new FrmBooks());
         }
     }

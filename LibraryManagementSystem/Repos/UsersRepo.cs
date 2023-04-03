@@ -25,8 +25,8 @@ namespace LibraryManagementSystem2.Helpers
             //SqlDataReader reader = sqlHelper.ExecuteReader("SELECT * FROM Users", CommandType.Text);
 
             // Execute a data table command
-            DataTable dataTable = sqlHelper.ExecuteDataTable("SELECT * FROM Users", CommandType.Text);
-            return dataTable;
+            DataTable dt = sqlHelper.ExecuteDataTable("SELECT * FROM Users", CommandType.Text);
+            return dt;
         }
         public void Insert(string name,string email,string password)
         {

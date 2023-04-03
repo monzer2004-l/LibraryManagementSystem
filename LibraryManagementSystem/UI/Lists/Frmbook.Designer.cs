@@ -160,6 +160,7 @@
             this.button4.TabIndex = 35;
             this.button4.Text = "Home";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.btnhome_Click);
             // 
             // dgv
             // 
@@ -425,7 +426,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(27, 536);
+            this.label9.Location = new System.Drawing.Point(10, 536);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(89, 37);
             this.label9.TabIndex = 42;
