@@ -49,10 +49,13 @@ namespace LibraryManagementSystem2
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btnhome_Click(object sender, EventArgs e)
         {
-            
-        }
+              MainForm undo = new MainForm();
+            undo.Show();
+            this.Hide();
+        }       
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
