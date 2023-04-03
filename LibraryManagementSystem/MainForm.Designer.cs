@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
@@ -39,36 +38,24 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.btnbook = new System.Windows.Forms.Button();
-            this.btnload = new System.Windows.Forms.Button();
             this.btnreturn = new System.Windows.Forms.Button();
             this.btnUsers = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DodgerBlue;
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.button3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(968, 43);
             this.panel1.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(921, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(47, 40);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // panel2
             // 
@@ -144,14 +131,14 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Crimson;
+            this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(280, 49);
+            this.button1.Location = new System.Drawing.Point(210, 49);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 42);
+            this.button1.Size = new System.Drawing.Size(122, 42);
             this.button1.TabIndex = 4;
             this.button1.Text = "Customers";
             this.button1.UseVisualStyleBackColor = false;
@@ -159,42 +146,27 @@
             // 
             // btnbook
             // 
-            this.btnbook.BackColor = System.Drawing.Color.Crimson;
+            this.btnbook.BackColor = System.Drawing.Color.Transparent;
             this.btnbook.FlatAppearance.BorderSize = 0;
             this.btnbook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnbook.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnbook.ForeColor = System.Drawing.Color.White;
-            this.btnbook.Location = new System.Drawing.Point(398, 43);
+            this.btnbook.Location = new System.Drawing.Point(338, 49);
             this.btnbook.Name = "btnbook";
-            this.btnbook.Size = new System.Drawing.Size(101, 42);
+            this.btnbook.Size = new System.Drawing.Size(122, 42);
             this.btnbook.TabIndex = 5;
             this.btnbook.Text = "books";
             this.btnbook.UseVisualStyleBackColor = false;
             this.btnbook.Click += new System.EventHandler(this.btnbook_Click);
             // 
-            // btnload
-            // 
-            this.btnload.BackColor = System.Drawing.Color.Crimson;
-            this.btnload.FlatAppearance.BorderSize = 0;
-            this.btnload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnload.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnload.ForeColor = System.Drawing.Color.White;
-            this.btnload.Location = new System.Drawing.Point(505, 49);
-            this.btnload.Name = "btnload";
-            this.btnload.Size = new System.Drawing.Size(137, 42);
-            this.btnload.TabIndex = 6;
-            this.btnload.Text = " Load books";
-            this.btnload.UseVisualStyleBackColor = false;
-            this.btnload.Click += new System.EventHandler(this.btnload_Click);
-            // 
             // btnreturn
             // 
-            this.btnreturn.BackColor = System.Drawing.Color.Crimson;
+            this.btnreturn.BackColor = System.Drawing.Color.Transparent;
             this.btnreturn.FlatAppearance.BorderSize = 0;
             this.btnreturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnreturn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnreturn.ForeColor = System.Drawing.Color.White;
-            this.btnreturn.Location = new System.Drawing.Point(648, 46);
+            this.btnreturn.Location = new System.Drawing.Point(443, 49);
             this.btnreturn.Name = "btnreturn";
             this.btnreturn.Size = new System.Drawing.Size(180, 42);
             this.btnreturn.TabIndex = 7;
@@ -204,28 +176,53 @@
             // 
             // btnUsers
             // 
-            this.btnUsers.BackColor = System.Drawing.Color.Crimson;
+            this.btnUsers.BackColor = System.Drawing.Color.Transparent;
             this.btnUsers.FlatAppearance.BorderSize = 0;
             this.btnUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUsers.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUsers.ForeColor = System.Drawing.Color.White;
-            this.btnUsers.Location = new System.Drawing.Point(834, 43);
+            this.btnUsers.Location = new System.Drawing.Point(618, 52);
             this.btnUsers.Name = "btnUsers";
-            this.btnUsers.Size = new System.Drawing.Size(122, 45);
+            this.btnUsers.Size = new System.Drawing.Size(122, 37);
             this.btnUsers.TabIndex = 8;
             this.btnUsers.Text = "Users";
             this.btnUsers.UseVisualStyleBackColor = false;
             this.btnUsers.Click += new System.EventHandler(this.btnUsers_Click);
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(746, 52);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(122, 37);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "Load";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.Location = new System.Drawing.Point(918, 0);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(47, 47);
+            this.button3.TabIndex = 8;
+            this.button3.UseVisualStyleBackColor = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Crimson;
+            this.BackColor = System.Drawing.Color.LimeGreen;
             this.ClientSize = new System.Drawing.Size(968, 612);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.btnUsers);
             this.Controls.Add(this.btnreturn);
-            this.Controls.Add(this.btnload);
             this.Controls.Add(this.btnbook);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
@@ -237,7 +234,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -252,12 +248,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnbook;
-        private System.Windows.Forms.Button btnload;
         private System.Windows.Forms.Button btnreturn;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnUsers;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
