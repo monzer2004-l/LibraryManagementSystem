@@ -73,5 +73,10 @@ namespace LibraryManagementSystem2
         {
 
         }
+
+        private void btnclose_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

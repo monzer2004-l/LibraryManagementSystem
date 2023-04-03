@@ -105,6 +105,11 @@ namespace LibraryManagementSystem2
             undo.Show();
             this.Hide();
         }
+
+        private void btnclose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
     
 }

@@ -48,6 +48,11 @@ namespace LibraryManagementSystem2.UI.Lists
            MainForm undo = new MainForm();
             undo.Show();
             this.Hide();
-        }       
+        }
+
+        private void btnclose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
