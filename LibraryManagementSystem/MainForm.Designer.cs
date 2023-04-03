@@ -38,9 +38,9 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnbook = new System.Windows.Forms.Button();
+            this.btnload = new System.Windows.Forms.Button();
+            this.btnreturn = new System.Windows.Forms.Button();
             this.btnUsers = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -157,49 +157,50 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnbook
             // 
-            this.button2.BackColor = System.Drawing.Color.Crimson;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(398, 43);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(101, 42);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "books";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnbook.BackColor = System.Drawing.Color.Crimson;
+            this.btnbook.FlatAppearance.BorderSize = 0;
+            this.btnbook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnbook.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnbook.ForeColor = System.Drawing.Color.White;
+            this.btnbook.Location = new System.Drawing.Point(398, 43);
+            this.btnbook.Name = "btnbook";
+            this.btnbook.Size = new System.Drawing.Size(101, 42);
+            this.btnbook.TabIndex = 5;
+            this.btnbook.Text = "books";
+            this.btnbook.UseVisualStyleBackColor = false;
+            this.btnbook.Click += new System.EventHandler(this.btnbook_Click);
             // 
-            // button3
+            // btnload
             // 
-            this.button3.BackColor = System.Drawing.Color.Crimson;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(505, 49);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(137, 42);
-            this.button3.TabIndex = 6;
-            this.button3.Text = " Load books";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnload.BackColor = System.Drawing.Color.Crimson;
+            this.btnload.FlatAppearance.BorderSize = 0;
+            this.btnload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnload.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnload.ForeColor = System.Drawing.Color.White;
+            this.btnload.Location = new System.Drawing.Point(505, 49);
+            this.btnload.Name = "btnload";
+            this.btnload.Size = new System.Drawing.Size(137, 42);
+            this.btnload.TabIndex = 6;
+            this.btnload.Text = " Load books";
+            this.btnload.UseVisualStyleBackColor = false;
+            this.btnload.Click += new System.EventHandler(this.btnload_Click);
             // 
-            // button4
+            // btnreturn
             // 
-            this.button4.BackColor = System.Drawing.Color.Crimson;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(648, 46);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(180, 42);
-            this.button4.TabIndex = 7;
-            this.button4.Text = " Return books";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnreturn.BackColor = System.Drawing.Color.Crimson;
+            this.btnreturn.FlatAppearance.BorderSize = 0;
+            this.btnreturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnreturn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnreturn.ForeColor = System.Drawing.Color.White;
+            this.btnreturn.Location = new System.Drawing.Point(648, 46);
+            this.btnreturn.Name = "btnreturn";
+            this.btnreturn.Size = new System.Drawing.Size(180, 42);
+            this.btnreturn.TabIndex = 7;
+            this.btnreturn.Text = " Return books";
+            this.btnreturn.UseVisualStyleBackColor = false;
+            this.btnreturn.Click += new System.EventHandler(this.button4_Click);
             // 
             // btnUsers
             // 
@@ -223,9 +224,9 @@
             this.BackColor = System.Drawing.Color.Crimson;
             this.ClientSize = new System.Drawing.Size(968, 612);
             this.Controls.Add(this.btnUsers);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnreturn);
+            this.Controls.Add(this.btnload);
+            this.Controls.Add(this.btnbook);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel3);
@@ -250,9 +251,9 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnbook;
+        private System.Windows.Forms.Button btnload;
+        private System.Windows.Forms.Button btnreturn;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnUsers;
         private System.Windows.Forms.Button button8;

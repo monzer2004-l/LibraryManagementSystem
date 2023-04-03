@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LibraryManagementSystem2.UI.Lists;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,8 +20,8 @@ namespace LibraryManagementSystem2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            StudentForm student=new StudentForm();
-            student.Show();
+            customerform cst=new customerform();
+            cst.Show();
             this.Hide();
         }
 
@@ -34,16 +35,21 @@ namespace LibraryManagementSystem2
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnbook_Click(object sender, EventArgs e)
         {
 
         }
 
         private void btnUsers_Click(object sender, EventArgs e)
         {
-            FrmUsers frm = new FrmUsers();
+            var frm = new LibraryManagementSystem2.UI.Lists.FrmUsers();
             frm.Show();
             this.Hide();
+        }
+
+        private void btnload_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
