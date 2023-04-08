@@ -33,7 +33,7 @@ namespace LibraryManagementSystem2.Repos
             SqlHelper sqlHelper = new SqlHelper("");
             // Execute a non-query command
             int rowsAffected = sqlHelper.ExecuteNonQuery
-                (@"INSERT INTO Users    (Name, Discreption)VALUES    (@Name,  @Discreption) "
+                (@"INSERT INTO BookCategories    (Name, Discreption)VALUES    (@Name,  @Discreption) "
             , CommandType.Text,
                 new SqlParameter("@Name", name),  new SqlParameter("@Discreption", discreption));
 
