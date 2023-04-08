@@ -51,6 +51,14 @@ namespace LibraryManagementSystem2
 
         private void btnload_Click(object sender, EventArgs e)
         {
+           
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var cat = new Frmcategories();
+            cat.Show();
+            this.Hide();
 
         }
     }
