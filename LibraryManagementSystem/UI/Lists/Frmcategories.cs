@@ -113,7 +113,9 @@ namespace LibraryManagementSystem2
 
         private void dgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+           txtId.Text  =dgv.SelectedRows[0].Cells[0].Value.ToString();
+           txtname.Text= dgv.SelectedRows[0].Cells[1].Value.ToString();
+            txtdescrip.Text=dgv.SelectedRows[0].Cells[2].Value.ToString();
         }
     }
     
