@@ -69,6 +69,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\StringEncryptor.cs" />
     <Compile Include="Repos\BookRepo.cs" />
     <Compile Include="Repos\CategoriesRepo.cs" />
     <Compile Include="Repos\CustomerRepo.cs" />
@@ -129,6 +130,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="SplachForm.resx">
       <DependentUpon>SplachForm.cs</DependentUpon>
@@ -147,15 +149,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Lists\Frmbook.resx">
       <DependentUpon>Frmbook.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Lists\Frmcategories.resx">
       <DependentUpon>Frmcategories.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Lists\FrmCustomer.resx">
       <DependentUpon>FrmCustomer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Lists\FrmUsers.resx">
       <DependentUpon>FrmUsers.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

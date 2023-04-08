@@ -88,5 +88,29 @@ namespace LibraryManagementSystem2.Helpers
                 }
             }
         }
+        public void Update(string tableName, Dictionary<string, object> updateValues, string condition)
+        {
+            using (SqlConnection connection = new SqlConnection(_connectionString))
+            {
+                connection.Open();
+                SqlCommand command = new SqlCommand($"UPDATE {tableName} SET ", connection);
+                int count = 0;
+                foreach (KeyValuePair<string, object> entry in updateValues)
+                {
+                    if (count > 0)
+                    {
+                        command.CommandText += ",";
+                    }
+                    command.CommandText += $"{entry.Key} = @{entry.Key}";
+                    command.Parameters.AddWithValue($"@{entry.Key}", entry.Value);
+                    count++;
+                }
+                if (!string.IsNullOrEmpty(condition))
+                {
+                    command.CommandText += $" WHERE {condition}";
+                }
+                command.ExecuteNonQuery();
+            }
+        }
     }
 }

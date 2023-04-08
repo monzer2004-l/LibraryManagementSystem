@@ -31,12 +31,23 @@ namespace LibraryManagementSystem2.Helpers
         public void Insert(string name,string email,string password)
         {
             SqlHelper sqlHelper = new SqlHelper("");
+           
             // Execute a non-query command
             int rowsAffected = sqlHelper.ExecuteNonQuery
                 (@"INSERT INTO Users    (Name, Email, Password)VALUES    (@Name, @Email, @Password) "
             , CommandType.Text,
-                new SqlParameter("@Name",name), new SqlParameter("@Email", email),new SqlParameter("@password", password)) ;
+                new SqlParameter("@Name",name), new SqlParameter("@Email", email.ToLower()
+                ),new SqlParameter("@password",StringEncryptor.Encrypt(email.ToLower(), password))) ;
 
+        }
+        public void Update(int id, string name, string email, string password)
+        {
+            SqlHelper sqlHelper = new SqlHelper("");
+            var fields = new Dictionary<string, object>();
+            fields["name"] = name;
+            fields["email"] = email.ToLower();
+            fields["password"] = StringEncryptor.Encrypt(email.ToLower(), password);
+            sqlHelper.Update("Users", fields, $"id={id}");
         }
 
 

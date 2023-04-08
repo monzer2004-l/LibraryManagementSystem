@@ -86,9 +86,9 @@
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(605, 0);
+            this.button8.Location = new System.Drawing.Point(678, 0);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(279, 82);
+            this.button8.Size = new System.Drawing.Size(290, 82);
             this.button8.TabIndex = 2;
             this.button8.Text = "Tipe";
             this.button8.UseVisualStyleBackColor = true;
@@ -99,9 +99,9 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(293, 0);
+            this.button7.Location = new System.Drawing.Point(349, 0);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(295, 82);
+            this.button7.Size = new System.Drawing.Size(323, 82);
             this.button7.TabIndex = 1;
             this.button7.Text = "DashBoard";
             this.button7.UseVisualStyleBackColor = true;
@@ -114,7 +114,7 @@
             this.button6.ForeColor = System.Drawing.Color.White;
             this.button6.Location = new System.Drawing.Point(2, 0);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(293, 82);
+            this.button6.Size = new System.Drawing.Size(341, 82);
             this.button6.TabIndex = 0;
             this.button6.Text = "AboutUs";
             this.button6.UseVisualStyleBackColor = true;
@@ -194,7 +194,7 @@
             this.btnUsers.ForeColor = System.Drawing.Color.White;
             this.btnUsers.Location = new System.Drawing.Point(603, 45);
             this.btnUsers.Name = "btnUsers";
-            this.btnUsers.Size = new System.Drawing.Size(122, 45);
+            this.btnUsers.Size = new System.Drawing.Size(122, 41);
             this.btnUsers.TabIndex = 8;
             this.btnUsers.Text = "Users";
             this.btnUsers.UseVisualStyleBackColor = false;
@@ -219,7 +219,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LimeGreen;
+            this.BackColor = System.Drawing.Color.Orange;
             this.ClientSize = new System.Drawing.Size(968, 612);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnUsers);
