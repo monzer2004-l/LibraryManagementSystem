@@ -28,7 +28,9 @@ namespace LibraryManagementSystem2.UI.Lists
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-
+            var repo = new UsersRepo();
+            repo.Update(int.Parse(txtId.Text), txtN.Text, txtE.Text, txtP.Text);
+            LoadData();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -57,7 +59,7 @@ namespace LibraryManagementSystem2.UI.Lists
 
         private void dgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            txtI.Text= dgv.SelectedRows[0].Cells[0].Value.ToString();
+            txtId.Text= dgv.SelectedRows[0].Cells[0].Value.ToString();
             txtN.Text = dgv.SelectedRows[0].Cells[1].Value.ToString();
             txtE.Text = dgv.SelectedRows[0].Cells[2].Value.ToString();
             txtP.Text = dgv.SelectedRows[0].Cells[3].Value.ToString();
