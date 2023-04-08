@@ -82,7 +82,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(526, 54);
+            this.label2.Location = new System.Drawing.Point(569, 54);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(114, 42);
             this.label2.TabIndex = 5;
@@ -127,13 +127,13 @@
             this.dgv.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgv.EnableHeadersVisualStyles = false;
             this.dgv.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv.Location = new System.Drawing.Point(567, 145);
+            this.dgv.Location = new System.Drawing.Point(479, 129);
             this.dgv.Name = "dgv";
             this.dgv.RowHeadersVisible = false;
             this.dgv.RowHeadersWidth = 51;
             this.dgv.RowTemplate.Height = 24;
             this.dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv.Size = new System.Drawing.Size(664, 531);
+            this.dgv.Size = new System.Drawing.Size(752, 557);
             this.dgv.TabIndex = 20;
             this.dgv.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.dgv.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -256,7 +256,7 @@
             this.btnhome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnhome.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnhome.ForeColor = System.Drawing.Color.White;
-            this.btnhome.Location = new System.Drawing.Point(219, 565);
+            this.btnhome.Location = new System.Drawing.Point(173, 631);
             this.btnhome.Name = "btnhome";
             this.btnhome.Size = new System.Drawing.Size(130, 55);
             this.btnhome.TabIndex = 35;
@@ -271,7 +271,7 @@
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(382, 494);
+            this.btnDelete.Location = new System.Drawing.Point(336, 560);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(120, 55);
             this.btnDelete.TabIndex = 34;
@@ -286,7 +286,7 @@
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEdit.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.ForeColor = System.Drawing.Color.White;
-            this.btnEdit.Location = new System.Drawing.Point(219, 494);
+            this.btnEdit.Location = new System.Drawing.Point(173, 560);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(130, 55);
             this.btnEdit.TabIndex = 33;
@@ -301,7 +301,7 @@
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(58, 494);
+            this.btnAdd.Location = new System.Drawing.Point(12, 560);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(127, 55);
             this.btnAdd.TabIndex = 32;
