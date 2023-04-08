@@ -157,6 +157,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Lists\FrmCustomer.resx">
       <DependentUpon>FrmCustomer.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Lists\FrmUsers.resx">
       <DependentUpon>FrmUsers.cs</DependentUpon>

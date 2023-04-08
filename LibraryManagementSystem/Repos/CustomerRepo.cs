@@ -42,10 +42,10 @@ namespace LibraryManagementSystem2
         {
             SqlHelper sqlHelper = new SqlHelper("");
             var fields = new Dictionary<string, object>();
-            fields["name"] = name;
-            fields["email"] = email.ToLower();
-            fields["phone"] = phone;
-            sqlHelper.Update("Customerss", fields, $"id={id}");
+            fields["Name"] = name;
+            fields["Email"] = email.ToLower();
+            fields["PhoneNumber"] = phone;
+            sqlHelper.Update("Customers", fields, $"id={id}");
         }
 
     }

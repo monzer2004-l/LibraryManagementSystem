@@ -1,4 +1,5 @@
 ﻿using LibraryManagementSystem2.Helpers;
+using LibraryManagementSystem2.Repos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -44,8 +45,12 @@ namespace LibraryManagementSystem2
             Application.Exit();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnEdit_Click(object sender, EventArgs e)
         {
+            var repo = new CustomerRepo();
+            repo.Update(int.Parse(txtId.Text), txtName.Text, txtEmail.Text,txtPhone.Text);
+            LoadData();
+
 
         }
 
@@ -60,7 +65,7 @@ namespace LibraryManagementSystem2
         private void button1_Click(object sender, EventArgs e)
         {
             var repo = new CustomerRepo();
-            repo.Insert(txtN.Text, txtE.Text, txtP.Text);
+            repo.Insert(txtName.Text, txtEmail.Text, txtPhone.Text);
             LoadData();
         }
 
@@ -77,6 +82,14 @@ namespace LibraryManagementSystem2
         private void btnclose_Click_1(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtId.Text = dgv.SelectedRows[0].Cells[0].Value.ToString();
+            txtName.Text = dgv.SelectedRows[0].Cells[1].Value.ToString();
+            txtEmail.Text = dgv.SelectedRows[0].Cells[2].Value.ToString();
+            txtPhone.Text= dgv.SelectedRows[0].Cells[3].Value.ToString();
         }
     }
 }

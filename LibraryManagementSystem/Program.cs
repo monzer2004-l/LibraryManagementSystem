@@ -19,7 +19,7 @@ namespace LibraryManagementSystem2
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             // Change this line after the test
-            Application.Run(new MainForm());
+            Application.Run(new FrmUsers());
            // Application.Run(new Frmbook());
             // Application.Run(new FrmBooks());
         }
