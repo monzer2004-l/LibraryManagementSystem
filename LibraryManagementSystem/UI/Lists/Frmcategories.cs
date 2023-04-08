@@ -1,4 +1,5 @@
-﻿using LibraryManagementSystem2.Repos;
+﻿using LibraryManagementSystem2.Helpers;
+using LibraryManagementSystem2.Repos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -27,7 +28,7 @@ namespace LibraryManagementSystem2
         }
 
 
-        private void Issuebooks_Load(object sender, EventArgs e)
+        private void categories(object sender, EventArgs e)
         {
 
         }
@@ -116,6 +117,13 @@ namespace LibraryManagementSystem2
            txtId.Text  =dgv.SelectedRows[0].Cells[0].Value.ToString();
            txtname.Text= dgv.SelectedRows[0].Cells[1].Value.ToString();
             txtdescrip.Text=dgv.SelectedRows[0].Cells[2].Value.ToString();
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            var repo=new CategoriesRepo();
+            repo.Update(int.Parse(txtId.Text), txtname.Text,txtdescrip.Text);
+            LoadData();
         }
     }
     
