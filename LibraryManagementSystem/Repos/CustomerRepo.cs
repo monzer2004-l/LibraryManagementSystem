@@ -37,5 +37,16 @@ namespace LibraryManagementSystem2
             , CommandType.Text,
                 new SqlParameter("@Name", name), new SqlParameter("@Email", email), new SqlParameter("@PhoneNumber", phone));
         }
+
+        public void Update(int id, string name, string email, string phone)
+        {
+            SqlHelper sqlHelper = new SqlHelper("");
+            var fields = new Dictionary<string, object>();
+            fields["name"] = name;
+            fields["email"] = email.ToLower();
+            fields["phone"] = phone;
+            sqlHelper.Update("Customerss", fields, $"id={id}");
+        }
+
     }
 }

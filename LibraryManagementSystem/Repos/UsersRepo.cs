@@ -50,6 +50,6 @@ namespace LibraryManagementSystem2.Helpers
             sqlHelper.Update("Users", fields, $"id={id}");
         }
 
-
+       
     }
 }

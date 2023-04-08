@@ -38,6 +38,14 @@ namespace LibraryManagementSystem2.Repos
                 new SqlParameter("@Name", name),  new SqlParameter("@Discreption", discreption));
 
         }
+        public void Update(int id, string name, string discreption)
+        {
+            SqlHelper sqlHelper = new SqlHelper("");
+            var fields = new Dictionary<string, object>();
+            fields["name"] = name;
+            fields["discreption"] = discreption;
+            sqlHelper.Update("BookCategories", fields, $"id={id}");
+        }
 
 
     }
