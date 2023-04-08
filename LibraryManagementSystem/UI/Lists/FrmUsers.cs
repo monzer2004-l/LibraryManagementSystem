@@ -20,7 +20,7 @@ namespace LibraryManagementSystem2.UI.Lists
         }
         private void LoadData()
         {
-            var repo = new CustomerRepo();
+            var repo = new UsersRepo();
             dgv.DataSource = repo.LoadData();
 
 
@@ -61,6 +61,11 @@ namespace LibraryManagementSystem2.UI.Lists
             txtN.Text = dgv.SelectedRows[0].Cells[1].Value.ToString();
             txtE.Text = dgv.SelectedRows[0].Cells[2].Value.ToString();
             txtP.Text = dgv.SelectedRows[0].Cells[3].Value.ToString();
+        }
+
+        private void FrmUsers_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

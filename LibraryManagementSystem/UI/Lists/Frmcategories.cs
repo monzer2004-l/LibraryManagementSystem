@@ -20,7 +20,7 @@ namespace LibraryManagementSystem2
         }
         private void LoadData()
         {
-            var repo = new CustomerRepo();
+            var repo = new CategoriesRepo();
             dgv.DataSource = repo.LoadData();
 
 
@@ -109,6 +109,11 @@ namespace LibraryManagementSystem2
         private void btnclose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
     

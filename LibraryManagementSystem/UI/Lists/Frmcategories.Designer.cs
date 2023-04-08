@@ -79,18 +79,18 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(537, 54);
+            this.label2.Location = new System.Drawing.Point(461, 54);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(260, 42);
+            this.label2.Size = new System.Drawing.Size(349, 42);
             this.label2.TabIndex = 5;
-            this.label2.Text = "LOADS BOOKS";
+            this.label2.Text = "CATEGORIESBOOKS";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(391, 9);
+            this.label1.Location = new System.Drawing.Point(384, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(502, 42);
             this.label1.TabIndex = 4;
@@ -178,6 +178,7 @@
             this.dgv.ThemeStyle.RowsStyle.Height = 24;
             this.dgv.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellContentClick);
             // 
             // button3
             // 
