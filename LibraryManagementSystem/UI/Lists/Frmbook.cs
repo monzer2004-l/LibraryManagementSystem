@@ -72,13 +72,14 @@ namespace LibraryManagementSystem2
 
         private void gunaDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            txtBookName.Text = dgv.SelectedRows[0].Cells[0].Value.ToString();
-            txtAuthor.Text = dgv.SelectedRows[0].Cells[1].Value.ToString();
-            txtPublisher.Text = dgv.SelectedRows[0].Cells[2].Value.ToString();
-            txtISBN.Text = dgv.SelectedRows[0].Cells[3].Value.ToString();
-            txtCategoryId.Text = dgv.SelectedRows[0].Cells[4].Value.ToString();
-            txtAvailableCopies.Text = dgv.SelectedRows[0].Cells[5].Value.ToString();
-            txtPrice.Text = dgv.SelectedRows[0].Cells[6].Value.ToString();
+            txtId.Text= dgv.SelectedRows[0].Cells[0].Value.ToString();
+            txtBookName.Text = dgv.SelectedRows[0].Cells[1].Value.ToString();
+            txtAuthor.Text = dgv.SelectedRows[0].Cells[2].Value.ToString();
+            txtPublisher.Text = dgv.SelectedRows[0].Cells[3].Value.ToString();
+            txtISBN.Text = dgv.SelectedRows[0].Cells[4].Value.ToString();
+            txtCategoryId.Text = dgv.SelectedRows[0].Cells[5].Value.ToString();
+            txtAvailableCopies.Text = dgv.SelectedRows[0].Cells[6].Value.ToString();
+            txtPrice.Text = dgv.SelectedRows[0].Cells[7].Value.ToString();
 
         }
 
