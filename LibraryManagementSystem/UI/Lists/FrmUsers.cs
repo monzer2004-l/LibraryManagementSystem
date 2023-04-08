@@ -54,5 +54,13 @@ namespace LibraryManagementSystem2.UI.Lists
         {
             this.Close();
         }
+
+        private void dgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtI.Text= dgv.SelectedRows[0].Cells[0].Value.ToString();
+            txtN.Text = dgv.SelectedRows[0].Cells[1].Value.ToString();
+            txtE.Text = dgv.SelectedRows[0].Cells[2].Value.ToString();
+            txtP.Text = dgv.SelectedRows[0].Cells[3].Value.ToString();
+        }
     }
 }

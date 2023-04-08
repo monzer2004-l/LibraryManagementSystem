@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmUsers));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmUsers));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dgv = new Guna.UI.WinForms.GunaDataGridView();
@@ -46,7 +47,8 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtI = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
@@ -62,6 +64,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1253, 123);
             this.panel1.TabIndex = 1;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Location = new System.Drawing.Point(1203, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(47, 47);
+            this.button1.TabIndex = 7;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.btnclose_Click);
             // 
             // label2
             // 
@@ -143,6 +157,7 @@
             this.dgv.ThemeStyle.RowsStyle.Height = 24;
             this.dgv.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellContentClick);
             // 
             // txtP
             // 
@@ -294,23 +309,43 @@
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // button1
+            // txtI
             // 
-            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(1203, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(47, 47);
-            this.button1.TabIndex = 7;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.btnclose_Click);
+            this.txtI.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtI.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtI.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtI.HintForeColor = System.Drawing.Color.Empty;
+            this.txtI.HintText = "";
+            this.txtI.isPassword = false;
+            this.txtI.LineFocusedColor = System.Drawing.Color.Blue;
+            this.txtI.LineIdleColor = System.Drawing.Color.Gray;
+            this.txtI.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.txtI.LineThickness = 3;
+            this.txtI.Location = new System.Drawing.Point(219, 136);
+            this.txtI.Margin = new System.Windows.Forms.Padding(4);
+            this.txtI.Name = "txtI";
+            this.txtI.Size = new System.Drawing.Size(175, 37);
+            this.txtI.TabIndex = 36;
+            this.txtI.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(13, 136);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(46, 37);
+            this.label3.TabIndex = 37;
+            this.label3.Text = "Id";
             // 
             // FrmUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1253, 726);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtI);
             this.Controls.Add(this.btnhome);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnEdit);
@@ -351,5 +386,7 @@
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button button1;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtI;
+        private System.Windows.Forms.Label label3;
     }
 }
