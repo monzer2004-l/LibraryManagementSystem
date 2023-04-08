@@ -419,9 +419,9 @@
             this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(10, 362);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(79, 37);
+            this.label8.Size = new System.Drawing.Size(89, 37);
             this.label8.TabIndex = 41;
-            this.label8.Text = "ISBN";
+            this.label8.Text = "Price";
             // 
             // label9
             // 
@@ -430,9 +430,9 @@
             this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(10, 573);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(89, 37);
+            this.label9.Size = new System.Drawing.Size(75, 37);
             this.label9.TabIndex = 42;
-            this.label9.Text = "Price";
+            this.label9.Text = "Isbn";
             // 
             // txtPrice
             // 
